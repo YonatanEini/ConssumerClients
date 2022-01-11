@@ -1,0 +1,98 @@
+﻿<UserControl x:Class="ConssumerClients.MVVM.View.ClientsGuiView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ConssumerClients.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="880"
+             Background="Transparent">
+    <StackPanel Orientation="Horizontal">
+        <Border Width="320" Background="#212121"
+                    Margin="30,50,0,37.6">
+            <Border.Clip>
+                <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,400,2000"/>
+            </Border.Clip>
+            <Grid>
+
+                <StackPanel Margin="0,0,6,-0.4">
+                    <TextBlock Text="Mongodb Compass"
+                               TextAlignment="Center"
+                                   Foreground="White"
+                                   FontSize="21"
+                                   Margin="20, 10 ,10, 0"
+                                     FontFamily="/Fonts/#Poppins"/>
+                    <TextBlock Text="Open Mongodb Compass"
+                                   Foreground="White"
+                                   FontSize="18"
+                                  TextAlignment="Center"
+                               Margin="0 35 0 0"
+                                     FontFamily="/Fonts/#Poppins"/>
+                    <TextBlock Text="Check Your Data in the GUI Platform "
+                                   Foreground="White"
+                                   FontSize="16.5"
+                               Margin="0 10 0 0"
+                                  TextAlignment="Center"
+                                     FontFamily="/Fonts/#Poppins"/>
+
+                </StackPanel>
+                <Button
+                        Style="{StaticResource RoundButtonTemplate}"
+                        Height="40"
+                        BorderBrush="#fff"
+                        FontFamily="/Fonts/#Poppins"
+                        Background="#32a74f"
+                        Click="ActivateCompassBtn_Click"
+                    Foreground="Black"
+                        Cursor="Hand"
+                        Content="Activate Compass" Margin="87,308,86,13.6"/>
+                <Image Width="220" Source="/Images/momgoLogo.png" Margin="27,145,31,69.6"/>
+            </Grid>
+        </Border>
+        <Border Width="320" Background="#e3e3e3"
+                    Margin="75,50,0,37.6">
+            <Border.Clip>
+                <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,400,2000"/>
+            </Border.Clip>
+            <Grid>
+
+                <StackPanel>
+                    <TextBlock Text="Angular Graphs App"
+                               TextAlignment="Center"
+                                   FontSize="20"
+                               Foreground="Black"
+                                   Margin="20, 10 ,10, 0"
+                                     FontFamily="/Fonts/#Poppins"/>
+                    <TextBlock Text="Open Angular Project"
+                                   Foreground="Black"
+                                   FontSize="16"
+                                  TextAlignment="Center"
+                               Margin="0 35 0 0"
+                                     FontFamily="/Fonts/#Poppins"/>
+                    <TextBlock Text="See Your Analyzed Data!"
+                                   Foreground="Black"
+                                   FontSize="16.5"
+                               Margin="0 10 0 0"
+                                  TextAlignment="Center"
+                                     FontFamily="/Fonts/#Poppins"/>
+
+                </StackPanel>
+                <Button
+                        Style="{StaticResource RoundButtonTemplate}"
+                        Height="40"
+                        BorderBrush="#fff"
+                        FontFamily="/Fonts/#Poppins"
+                        Background="#454545"
+                    Foreground="White"
+                        Cursor="Hand"
+                        Click="ActivateAngularBtn_Click"
+                        Content="Activate Angular" Margin="87,306,86,15.6"/>
+                <Image Source="/Images/analystImg.png" Margin="40,164,52,94.6"/>
+            </Grid>
+        </Border>
+    </StackPanel>
+</UserControl>
